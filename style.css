@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'), 
+    url('Fonts/Museosanscyrl500.woff2') format('woff2'), 
+    url('Fonts/Museosanscyrl500.woff') format('woff'), 
+    url('Fonts/Museosanscyrl500.ttf') format('truetype');
+}
+
+body {
+  background-color: #f5f5f0;
+  font-family: 'Museo Sans Cyrl', 'Open Sans', sans-serif;
+}
+
+.header {
+  width: 100%;
+}
+
+.header_container{
+  width: 880px;
+  margin: 70px auto;
+}
+
+h2 {
+  font-weight: 900;
+  color: #52545e;
+}
+
+.main_container {
+  width: 100%;
+}
+
+.center_part {
+  width: 1132px;
+  margin: 80px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-size: 14px;
+}
+
+.sticker {
+  border-radius: 7px;
+  background-color: #ffffff;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 55px 35px;
+  margin: 3px 5px 28px;
+  cursor: pointer;
+  box-shadow: 0 1px 25px 0 rgba(0,0,0,.06);
+  transition: transform 0.2s linear;
+}
+
+.sticker:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 35px 0 rgba(0,0,0, 0.1);
+}
+
+.sticker_number {
+  color: #ca5c24;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.sticker_title {
+  font-weight: 900;
+  color: #ca5c24;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sticker_text {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 17px;
+  color: #514e4e;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .center_part{
+    width: 100%;
+    min-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header_container {
+    width: 60%;
+    margin: 50px auto;
+  }
+
+  .center_part {
+    width: 95%;
+  }
+
+  .sticker {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_container {
+    width: 70%;
+  }
+
+  .center_part {
+    width: 95%;
+  }
+
+  .sticker {
+    width: 40%;
+    padding: 5px 10px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header_container {
+    width: 50%;
+  }
+
+  .center_part {
+    width: 90%;
+  }
+
+  .sticker {
+    width: 85%;
+    padding: 5px 10px 20px 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header_container {
+    width: 80%;
+  }
+}
