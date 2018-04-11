@@ -1,14 +1,13 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('Fonts/Museosanscyrl500.woff2') format('woff2'), 
+       url('Fonts/Museosanscyrl500.woff') format('woff'), 
+       url('Fonts/Museosanscyrl500.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
-}
-
-@font-face {
-  font-family: 'Museo Sans Cyrl';
-  src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'), 
-    url('Fonts/Museosanscyrl500.woff2') format('woff2'), 
-    url('Fonts/Museosanscyrl500.woff') format('woff'), 
-    url('Fonts/Museosanscyrl500.ttf') format('truetype');
 }
 
 body {
